@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-kaast%kbst+-s#rd%4p-6#)-8qq6*8+vf2wk3=#*o3z48w2jmp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.onrender.com']
 
 LOGIN_URL = '/login/'      #If you try to login into a page you don't have access to, you will be redirected to this url
 LOGIN_REDIRECT_URL = '/'
@@ -86,6 +86,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'postgresql':'//online_store_postgress_user:oJNVS9Fs9gUQELRII22gPxBOJZHIHMR6@dpg-d20dffvdiees739dde20-a/online_store_postgress'
     }
 }
 
